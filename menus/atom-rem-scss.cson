@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Convert atom-rem-scss'
+      'command': 'atom-rem-scss:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom-rem-scss'
+      'submenu': [
+        {
+          'label': 'Convert'
+          'command': 'atom-rem-scss:toggle'
+        }
+      ]
+    ]
+  }
+]
